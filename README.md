@@ -1,8 +1,14 @@
 # WebRTC 
-1.°²×°Node.js 
-2.Æô¶¯Node.js command prompt 
-3.ÒÆ¶¯µ±Ç°Ä¿Â¼ÖÁ·ÅÓĞserver.jsµÄÎÄ¼ş¼Ğ 
-4.ÊäÈënpm init 
-5.ÊäÈënpm install ws 
-6.ÊäÈënode server.js 
-7.ä¯ÀÀÆ÷ÔÊĞíindex.html£¨Èç²»ÊÇ±¾µØ²âÊÔ£¬ÇëÔÚindex.jsÖĞ¸Ä·şÎñÆ÷ip£© 
+1.å®‰è£…Node.js 
+
+2.å¯åŠ¨Node.js command prompt 
+
+3.ç§»åŠ¨å½“å‰ç›®å½•è‡³æ”¾æœ‰server.jsçš„æ–‡ä»¶å¤¹ 
+
+4.è¾“å…¥npm init 
+
+5.è¾“å…¥npm install ws 
+
+6.è¾“å…¥node server.js 
+
+7.æµè§ˆå™¨å…è®¸index.htmlï¼ˆå¦‚ä¸æ˜¯æœ¬åœ°æµ‹è¯•ï¼Œè¯·åœ¨index.jsä¸­æ”¹æœåŠ¡å™¨ipï¼‰ 
