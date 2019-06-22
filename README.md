@@ -11,4 +11,4 @@
 
 6.输入node server.js 
 
-7.浏览器允许index.html（如不是本地测试，请在index.js中改服务器ip） 
+7.浏览器运行index.html（如不是本地测试，请在index.js中改服务器ip） 
