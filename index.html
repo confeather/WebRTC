@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>homepage</title>
+    <style>
+        body{
+            background-color:gray;
+            margin-top:15px;
+            font-family:sans-serif;
+            color:white;
+        }
+        video{
+            background:black;
+            border:1px solid gray;
+        }
+        .page{
+            position:relative;
+            display:block;
+            margin:0 auto;
+            width:500px;
+            height:500px;
+        }
+        #localVideo{
+            width:150px;
+            height:150px;
+            position:absolute;
+            top:15px;
+            right:15px;
+        }
+        #remoteVideo{
+            width:500px;
+            height:500px;
+        }
+
+        input, button {
+            border: none;
+            outline: none;
+        }
+        .tl-price-input {
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 7px 0;
+            background: #F4F4F7;
+            border-radius: 3px;
+            padding-left: 5px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+        }
+            .tl-price-input:focus {
+                border-color: #66afe9;
+                outline: 0;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+            }
+        .ant-btn {
+            line-height: 1.499;
+            position: relative;
+            display: inline-block;
+            font-weight: 400;
+            white-space: nowrap;
+            text-align: center;
+            background-image: none;
+            border: 1px solid transparent;
+            -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.015);
+            box-shadow: 0 2px 0 rgba(0,0,0,0.015);
+            cursor: pointer;
+            -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+            transition: all .3s cubic-bezier(.645, .045, .355, 1);
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            height: 32px;
+            padding: 0 15px;
+            font-size: 14px;
+            border-radius: 4px;
+            color: rgba(0,0,0,0.65);
+            background-color: #fff;
+            border-color: #d9d9d9;
+        }
+        .ant-btn-primary {
+            color: #fff;
+            background-color: #1890ff;
+            border-color: #1890ff;
+            text-shadow: 0 -1px 0 rgba(0,0,0,0.12);
+            -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+            box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+        }
+        .ant-btn-red {
+            color: #fff;
+            background-color: #FF5A44;
+            border-color: #FF5A44;
+            text-shadow: 0 -1px 0 rgba(0,0,0,0.12);
+            -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+            box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+        }
+        .ant-btn-blue {
+            color: #fff;
+            background-color: #1890ff;
+            border-color: #1890ff;
+            text-shadow: 0 -1px 0 rgba(0,0,0,0.12);
+            -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+            box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="login-page" class="page">
+        <h2>请输入用户名</h2>
+        <input type="text" id="userName" class="tl-price-input" style="width: 50%;"/>
+        <button id="login" class="ant-btn ant-btn-blue">登录</button>
+    </div>
+    <div id="call-page" class="page">
+        <video id="localVideo" autoplay></video>
+        <video id="remoteVideo" autoplay></video>
+        <input type="text" id="otherName" class="tl-price-input" style="width: 50%;"/>
+        <button id="call" class="ant-btn ant-btn-blue">呼叫</button>
+        <button id="hang-up" class="ant-btn ant-btn-red">挂断</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
